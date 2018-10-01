@@ -69,7 +69,7 @@ public class Politico {
 
 	public void adicionarMandato(Mandato mandato) {
 		if (!mandatos.isEmpty() && mandatos.get(mandatos.size() - 1).getAnoFinal() > mandato.getAnoInicial()) {
-			System.err.println("O perÌodo do novo mandato n„o pode sobrepor o perÌodo de um mandato anterior.");
+			System.err.println("O per√≠odo do novo mandato n√£o pode sobrepor o per√≠odo de um mandato anterior.");
 			return;
 		}
 

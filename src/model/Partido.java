@@ -48,7 +48,7 @@ public class Partido {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(nome);
-		sb.append("\t\t Avaliação: ");
+		sb.append("\t\t AvaliaÃ§Ã£o: ");
 		
 		NumberFormat nf = NumberFormat.getNumberInstance();
 		nf.setMaximumFractionDigits(2);

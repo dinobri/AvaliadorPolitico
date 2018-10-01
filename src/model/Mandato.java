@@ -40,12 +40,12 @@ public abstract class Mandato {
 
 	public void incluirAvaliacaoEleitor(String cpf, double avaliacao) {
 		if (this.avaliacoesEleitores.stream().anyMatch(ae -> ae.getCpf().equals(cpf))) {
-			System.err.println("Já existe uma avaliação com este CPF ("+ cpf +").");
+			System.err.println("Jï¿½ existe uma avaliaï¿½ï¿½o com este CPF ("+ cpf +").");
 			return;
 		}
 
 		if (avaliacao < 0 || avaliacao > 10) {
-			System.err.println("A avaliação de um mandato deve ser uma nota de 0 a 10.");
+			System.err.println("A avaliaï¿½ï¿½o de um mandato deve ser uma nota de 0 a 10.");
 			return;
 		}
 
@@ -99,13 +99,13 @@ public abstract class Mandato {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("Período: ");
+		sb.append("PerÃ­odo: ");
 		sb.append(anoInicial);
-		sb.append(" à ");
+		sb.append(" Ã  ");
 		sb.append(anoFinal);
 
 		sb.append(".\t");
-		sb.append("Avaliação: ");
+		sb.append("AvaliaÃ§Ã£o: ");
 		
 		NumberFormat nf = NumberFormat.getNumberInstance();
 		nf.setMaximumFractionDigits(2);
